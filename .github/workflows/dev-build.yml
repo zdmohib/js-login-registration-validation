@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-      - uses: subrahmanyam425/sonarqube-scan-action@dev
+      - uses: subrahmanyam425/sonarsource/sonarqube-scan-action@dev
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_DEV }}
@@ -24,3 +24,4 @@ jobs:
       #   timeout-minutes: 5
       #   env:
       #     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      # this is new test
