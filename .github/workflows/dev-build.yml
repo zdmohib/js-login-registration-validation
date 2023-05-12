@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - dev
+      #checking dev
 jobs:
   build:
     name: Build
